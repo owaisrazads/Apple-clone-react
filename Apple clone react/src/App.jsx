@@ -1,5 +1,7 @@
 
-import img1 from './image/2024.jpg'
+import hero from './images/hero.jpg'
+import React from 'react'
+
 
 import './App.css'
 
@@ -9,10 +11,10 @@ function App() {
 
   return (
     <>
-     <nav class="bg-[#404040] p-4">
+     <nav class="bg-[#404040] p-3 max-[760px]:">
       <div class="container mx-auto flex justify-between items-center">
-      <div class="text-white text-3xl font-bold"><i class="fa-brands fa-apple"></i></div>
-      <div class="flex space-x-4">
+      <div class="text-white text-sm font-bold"><i class="fa-brands fa-apple"></i></div>
+      <div class="flex space-x-4 text-sm">
       <a href="#" class="text-white hover:text-gray-300">Store</a>
       <a href="#" class="text-white hover:text-gray-300">Mac</a>
       <a href="#" class="text-white hover:text-gray-300">ipad</a>
@@ -28,11 +30,12 @@ function App() {
     </div>
    </div>
   </nav>
-  <head>
-<div ><img src={img1} alt="" /></div>
+<div ><img src={hero} alt="" /></div>
+  
+      
 
   
-</head>
+
     
     </>
   )
